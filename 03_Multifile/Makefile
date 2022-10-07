@@ -60,15 +60,6 @@ test-multiple:
 	cmp mult mult-a
 	cmp mult-so mult
 
-README: prog
-	./$< 2> $@
-
-README-a: prog-a
-	./$< 2> $@
-
-README-so: prog-so
-	LD_LIBRARY_PATH=`pwd` ./$< 2> $@
-
 liboutput_static.a: fun.o const.o
 	ar -rcs $@ $^
 
