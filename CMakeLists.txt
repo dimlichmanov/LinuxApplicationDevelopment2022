@@ -5,3 +5,5 @@ set(CMAKE_C_STANDARD 11)
 
 
 add_subdirectory(01_GitBuildReq)
+add_subdirectory(02_TerminalProject)
+add_subdirectory(03_Multifile)
