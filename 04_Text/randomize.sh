@@ -1,3 +1,5 @@
+#!/bin/bash
+
 full_text=""
 total_len=0
 IFS=''
