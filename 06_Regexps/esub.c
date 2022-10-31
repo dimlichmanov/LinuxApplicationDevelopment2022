@@ -47,6 +47,7 @@ int main(int argc, char **argv) {
             if (pm[atoi(str)].rm_so == -1 ) {
                 printf("BAD POCKET INDEX\n");
                 regfree(&regex);
+                return -1;
             }
             print_pocket(pm[atoi(str)].rm_so, pm[atoi(str)].rm_eo, string);
             esc_status = 0;
